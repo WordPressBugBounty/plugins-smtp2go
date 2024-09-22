@@ -1,0 +1,1 @@
+# plugins-smtp2go
