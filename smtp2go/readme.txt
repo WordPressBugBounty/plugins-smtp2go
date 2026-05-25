@@ -2,9 +2,9 @@
 Contributors: 2050nz, greatsaltlake
 Tags: email, smtp, inbox, delivery, wp_mail
 Requires at least: 6.2
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.14.1
+Stable tag: 1.17.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -92,9 +92,8 @@ You will need to enable the plugin and enter the required details under the "Set
  **Note:**
  The API Key needs at least the following permissions:
 
-* Emails
-* Statistics
-* Sender Domains
+* Emails (/email/send)
+* Statistics (optional)
 
 3. Set the default From Email Address.
 4. Set the default From Name.
@@ -139,6 +138,15 @@ Our data centers are located around the world, meaning lightning-fast connection
 
 == Changelog ==
 
+= v1.17.0 =
+* test against version 7.0
+* add region selector
+* fix sender name field pattern attribute regex compatibility with Chromium
+* add extra current_user_can checks on admin actions
+= v1.16.0 =
+* add "API Region" setting to pin requests to a specific regional endpoint (US, EU, AU)
+* add `smtp2go_api_region` filter for programmatic per-environment overrides
+* add `SMTP2GO_API_REGION` constant support (when `SMTP2GO_USE_CONSTANTS` is true)
 = v1.15.0 =
 * security updates
 = v1.14.1 =
